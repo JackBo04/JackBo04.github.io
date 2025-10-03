@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
+    </head>
+<body>
+
+    <table style="width: 100%; max-width: 800px; margin: 30px auto 0;">
+        <tr>
+            <td>
+                <table style="width: 100%;">
+                    <tr>
+                        <td style="padding: 2.5%; vertical-align: middle; text-align: right; font-size: 18px;">
+                            <a href="{{ "/" | prepend: site.baseurl }}" style="margin-right: 10px;">Homepage</a>
+                            <a href="{{ "/blog/" | prepend: site.baseurl }}" style="margin-right: 10px;">Blog</a>
+                            <a href="{{ "/misc/" | prepend: site.baseurl }}">Misc</a>
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="main-content" style="padding: 2.5%;">
+                    {{ content }}
+                </div>
+                
+                <!-- <table style="width: 100%;">
+                    <tr>
+                        <td style="padding: 0px">
+                            <br />
+                            <p style="text-align: center; font-size: small">
+                                Last updated: October, 2025. Thanks for the
+                                <a style="font-size: small" href="https://jonbarron.info">template</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table> -->
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
